@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>模板精品店 http://www.cncss.com</title>
+<link href="images/css.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+  .style4 {font-size: 16px}
+  .style8 {font-size: 16px}
+  .style10 {font-size: 9pt}
+  #lm {text-align: right;}
+
+  #box {
+    padding-left: 30%;
+    
+  }
+
+</style>
+<script>
+  function same(form) {
+    
+    if(form.password.value!=form.a_pas.value){
+      form.a_pas.value='';
+      alert("两次密码不相同,请重新输入！");
+    }
+  };
+  function check(form) {
+    if(form.user.value[0]=="一"){
+      form.user.value='';
+      alert("请勿使用 “一” 开头,请重新输入！");
+    }
+    
+  }
+  function seepass(form) {
+    if(form.password.type=="text"){
+      form.password.type="password";
+    }
+    else{
+      form.password.type="text";
+
+    }
+  }
+</script>
+</head>
+<body background="images/bg.gif" leftmargin="0" topmargin="0"> 
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="3"> 
+  <tr> 
+    <td></td> 
+  </tr> 
+</table> 
+<table width="622" border="0" align="center" cellpadding="0" cellspacing="0"> 
+  <tr> 
+    <td><img src="images/top_2.gif" width="622" height="17"></td> 
+  </tr> 
+  <tr> 
+    <td width="622" height="212" background="images/top.gif"><table width="100%" height="212" border="0" cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td width="63%">&nbsp;</td> 
+          <td width="37%"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="../../ch01/example01/01.htm" width="407" height="212"> 
+              <param name="movie" value="images/line.swf"> 
+              <param name="quality" value="high"> 
+              <param name="wmode" value="transparent"> 
+              <embed src="images/line.swf" width="407" height="212" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent"></embed> 
+            </object></td> 
+        </tr> 
+      </table></td> 
+  </tr> 
+  <tr> 
+    <td bgcolor="#FFFFFF"></td> 
+  </tr> 
+  <tr valign="middle"> 
+    <td height="21" valign="middle" background="images/bg1.gif" class="a1"> <div align="center">|相关栏目| |相关栏目| |相关栏目| |相关栏目| |相关栏目| |相关栏目| |相关栏目| |相关栏目| |相关栏目| </div></td> 
+  </tr> 
+</table> 
+<table width="622" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#EFF8F7"> 
+  <tr> 
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+        <tr> 
+          <td colspan="2" align="center">&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td width="30%" align="center" valign="top"> <table width="96%" border=1 align="center" cellpadding=0 cellspacing=0 bordercolor=#000000 style="border-collapse: collapse"> 
+              <tr> 
+                <td height="20" align="center" background="images/bg1.gif" class="a1">:: 更新快讯 ::</td> 
+              </tr> 
+              <tr> 
+                <td height="100" align="center"><span class="a1">内容</span></td> 
+              </tr> 
+            </table> 
+            <br> 
+            <table width="96%" border=1 align="center" cellpadding=0 cellspacing=0 bordercolor=#000000 style="border-collapse: collapse"> 
+              <tr> 
+                <td height="20" align="center" background="images/bg1.gif" class="a1"><font color="#333333">:: 栏目 ::</font></td> 
+              </tr> 
+              <tr> 
+                <td height="100" align="center"><span class="a1">内容</span></td> 
+              </tr> 
+            </table> 
+            <br> 
+            <table width="96%" border=1 align="center" cellpadding=0 cellspacing=0 bordercolor=#000000 style="border-collapse: collapse"> 
+              <tr> 
+                <td height="20" align="center" background="images/bg1.gif" class="a1">:: 栏目 ::</td> 
+              </tr> 
+              <tr> 
+                <td height="100" align="center"><span class="a1">内容</span></td> 
+              </tr> 
+            </table></td> 
+          <td width="70%" align="center" >
+            
+            <form method="get" name="m_form">
+              <!-- 这是表单内容 -->
+              <table border="0px">
+                <tr>
+                  <td id="lm">*用户名:</td>
+                  <td><input name="user" type="text" minlength="3" maxlength="12" required onblur="check(m_form)">
+                    (3-12个字符,勿一开头)</td>
+                </tr>
+                <tr>
+                  <td id="lm">*密码:</td>
+                  <td><input name="password" type="password" minlength="3" maxlength="12" required>
+                    <button name="seeornot" onclick="seepass(m_form)">See</button>
+                    (3-12个字符)</td>
+                </tr>
+                <tr>
+                  <td id="lm">*确认密码:</td>
+                  <td><input name="a_pas" type="password" required onblur="same(m_form)"></td>
+                </tr>
+                <tr>
+                  <td id="lm">通信地址:</td>
+                  <td><input name="address" type="text" maxlength="60">
+                    (少于60个字符)</td>
+                </tr>
+                <tr>
+                  <td id="lm">邮政编码:</td>
+                  <td><input name="num" type="text" minlength="6" maxlength="6"></td>
+                </tr>
+                <tr>
+                  <td id="lm">*E_mail:</td>
+                  <td><input name="m_email" type="email" required></td>
+                </tr>
+                <tr>
+                  <td id="lm">*有效证件:</td>
+                  <td>
+                    <select name="idcard" id="card">
+                      <option value="身份证">身份证</option>
+                      <option value="士官证">士官证</option>
+                      <option value="其他">其他</option>
+                  </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="lm">*证件号码</td>
+                  <td><input name="address" type="text" maxlength="50" required>
+                    (少于50个字符)</td>
+                </tr>
+                <tr>
+                  <td colspan="2" id="box">
+                    <input type="submit" name="sub" value="确定">
+                    <input type="reset" name="res" value="重置">
+                  </td>
+                </tr>
+              </table>
+
+            </form>
+          </td>
+        </tr> 
+      </table></td> 
+    <td>&nbsp;</td> 
+  </tr> 
+  <tr> 
+    <td colspan="2"> <table width="100%" border="0" cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td width="25%">&nbsp;</td> 
+          <td width="56%"> <div align="center"><a href="http://www.cncss.com" class="style10">模板精品店</a></div></td> 
+          <td width="19%"> <div align="right"><a href=""><img src="images/copyright1.gif" width="79" height="19" border="0"></a></div></td> 
+        </tr> 
+      </table></td> 
+  </tr> 
+</table> 
+</body>
+</html>
+
+                                                                 
