@@ -4,7 +4,7 @@
 }
 .warp{
     background-color: rgb(5, 5, 40);
-    height: 1500px;
+    height: 2000px;
 }
 .topmenu{
     background-color:rgb(35, 43, 86);
@@ -45,7 +45,7 @@
 .bodycent{
     width: 75%;
     height: 600px;
-    background-color: rgb(226, 244, 174);
+    background-color: rgba(255, 255, 255, 0.1);
     margin: 0 auto;
 }
 .leftpage{
@@ -54,7 +54,7 @@
     background-color: rgb(206, 139, 139);
     float: left;
     margin-left: 10%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-left: 50px;
     padding-top: 20px;
 }
@@ -64,21 +64,65 @@
     background-color: rgb(189, 230, 129);
     float: right;
     margin-right: 10%;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-left: 50px;
     padding-top: 20px;
 }
 
 .introduce{
-    
+    width: 100%;
 }
-
+.introducemain{
+    width: 75%;
+    height: 500px;
+    background-color: rgb(108, 217, 162);
+    margin: 0 auto;
+}
 .ranklist{
     width: 100%;
 }
-.ranklist div{
+.rankmain{
     width: 75%;
-    height: 300px;
+    height: 800px;
     background-color: aqua;
     margin: 0 auto;
+    padding-top: 100px;
+}
+.listdetails{
+    height: 50px;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 10px;
+    background-color: white;
+}
+
+progress {
+    width: 160px;
+    border: 1px solid #2f2828;  
+    background-color:#ffffff;
+    color: #4888b9; /*IE10下已完成进度的颜色*/
+}
+
+progress::-moz-progress-bar { background: #4888b9; }/*表示在Firefox下已完成进度的颜色*/
+progress::-webkit-progress-bar { background: #ffffff; }/*表示在chrome下全部进度的颜色*/
+progress::-webkit-progress-value  { background: #4888b9; }/*表示在chrome下已完成进度的颜色*/
+
+
+.mainmember{
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.mainmember span{
+    color: white;
+    font-size: 20px;
+}
+.mainmember ul{
+    list-style: none;
+}
+.mainmember li{
+    line-height: 30px;
+}
+.condition{
+    padding-left: 10%;
+    padding-top: 20px;
 }
