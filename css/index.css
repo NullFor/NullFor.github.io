@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+.warp{
+    background-color: rgb(5, 5, 40);
+    height: 1500px;
+}
+.topmenu{
+    background-color:rgb(35, 43, 86);
+    height: 120px;
+    width: 100%;
+    border: 1px solid;
+    position: fixed;
+}
+.sign{
+    padding-left: 20%;
+    padding-top: 40px;
+    float: left;
+}
+.sign img{
+    float: left;
+}
+.sign span{
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.banner{
+    padding-right: 20%;
+    padding-top: 40px;
+    float: right;
+}
+.banner span{
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.body{
+    padding-top: 120px;
+}
+.bodycent{
+    width: 75%;
+    height: 600px;
+    background-color: rgb(226, 244, 174);
+    margin: 0 auto;
+}
+.leftpage{
+    height: 400px;
+    width: 30%;
+    background-color: rgb(206, 139, 139);
+    float: left;
+    margin-left: 10%;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.rightpage{
+    height: 400px;
+    width: 30%;
+    background-color: rgb(189, 230, 129);
+    float: right;
+    margin-right: 10%;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.introduce{
+    
+}
+
+.ranklist{
+    width: 100%;
+}
+.ranklist div{
+    width: 75%;
+    height: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+}
