@@ -5,17 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>院程序设计协会官网</title>
-  <link rel="stylesheet" href="./css/index.css">
   <script type="text/javascript">
-    var system ={};  
+       var system ={};  
        var p = navigator.platform;       
        system.win = p.indexOf("Win") == 0;  
        system.mac = p.indexOf("Mac") == 0;  
        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
-       if(system.win||system.mac||system.xll){//如果是电脑跳转到
-               window.location.href="./main.html";  
-       }else{  //如果是手机,跳转到
-              window.location.href="./tamp.html";  
+       if(system.win||system.mac||system.xll){
+              //电脑界面
+               window.location.href="./pc.html";  
+       }else{
+              //手机界面
+              window.location.href="./phone.html";  
        }
 </script>
 </head>
