@@ -6,96 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>院程序设计协会官网</title>
   <link rel="stylesheet" href="./css/index.css">
+  <script type="text/javascript">
+    var system ={};  
+       var p = navigator.platform;       
+       system.win = p.indexOf("Win") == 0;  
+       system.mac = p.indexOf("Mac") == 0;  
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+       if(system.win||system.mac||system.xll){//如果是电脑跳转到
+               window.location.href="main.html";  
+       }else{  //如果是手机,跳转到
+              window.location.href="https://baidu.com";  
+       }
+</script>
 </head>
 <body>
-  <div class="warp">
-    <!--Banner-->
-    <header class="topmenu">
-      <div class="sign">
-        <img src="./img/sign.jpg" width="40px" height="40px">
-        <span>程序设计协会</span>
-      </div>
-      <div class="banner">
-        <span><a href="#body">首页</a></span>
-        <span>介绍</span>
-        <span>排名</span>
-      </div>
-    </header>
-    <!--首页-->
-    <div id="body" class="body">
-      <div class="bodycent">
-        <div class="leftpage">
-          <h1>院程序设计协会</h1> <br>
-          <h3>成立于1999年</h3>
-        </div>
-        <div class="rightpage">
-          获奖详情
-        </div>
-      </div>
-    </div>
-    <!--介绍-->
-    <div class="introduce">
-      <div class="introducemain">
-        <div class="mainmember">
-          <ul>
-            <span>指导老师</span>
-            <li>XXX</li>
-          </ul>
-          <ul>
-            <span>会长</span>
-            <li>XXX</li>
-          </ul>
-          <ul>
-            <span>副会长</span>
-            <li>XXX</li>
-            <li>XXX</li>
-            <li>XXX</li>
-          </ul>
 
-        </div>
-        <div class="condition">
-          <progress id="progress" value="80" max="100"></progress><br>
-        
-          <progress id="progress" value="70" max="100"></progress>
-        </div>
-      </div>
-    </div>
-    <!--排名-->
-    <div class="ranklist">
-      <div class="rankmain">
-        <div class="listdetails">
-          第一名
-        </div>
-        <div class="listdetails">
-          第二名
-        </div>
-        <div class="listdetails">
-          第三名
-        </div>
-        <div class="listdetails">
-          第四名
-        </div>
-        <div class="listdetails">
-          第五名
-        </div>
-        <div class="listdetails">
-          第六名
-        </div>
-        <div class="listdetails">
-          第七名
-        </div>
-        <div class="listdetails">
-          第八名
-        </div>
-        <div class="listdetails">
-          第九名
-        </div>
-        <div class="listdetails">
-          第十名
-        </div>
-        
-      </div>
-    </div>
-  </div>
 </body>
 </html>
