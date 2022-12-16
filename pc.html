@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>院程序设计协会官网</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/part.css">
   
 </head>
 <body>
@@ -14,88 +15,46 @@
     <header class="topmenu">
       <div class="sign">
         <img src="./img/sign.jpg" width="40px" height="40px">
-        <span>程序设计协会</span>
+        <span>程序设计协会(Programming Association)</span>
       </div>
       <div class="banner">
-        <span><a href="#body">首页</a></span>
-        <span>介绍</span>
-        <span>排名</span>
+        <div id="aban">
+          <span>首页</span>
+        </div>
+        <div id="aban">
+          <span>介绍</span>
+        </div>
+        <div id="aban">
+          <span>登录</span>
+        </div>
       </div>
     </header>
-    <!--首页-->
-    <div id="body" class="body">
-      <div class="bodycent">
-        <div class="leftpage">
-          <h1>院程序设计协会</h1> <br>
-          <h3>成立于1999年</h3>
-        </div>
-        <div class="rightpage">
-          获奖详情
-        </div>
-      </div>
+    <!--公告板-->
+    <div class="repo">
+      <span>公告板:</span>
+      <span style="padding-left: 40px; text-decoration: underline 1px;">当前没有任何通知</span>
     </div>
-    <!--介绍-->
-    <div class="introduce">
-      <div class="introducemain">
-        <div class="mainmember">
-          <ul>
-            <span>指导老师</span>
-            <li>XXX</li>
-          </ul>
-          <ul>
-            <span>会长</span>
-            <li>XXX</li>
-          </ul>
-          <ul>
-            <span>副会长</span>
-            <li>XXX</li>
-            <li>XXX</li>
-            <li>XXX</li>
-          </ul>
+    <!--首页-->
+    <div class="mainpage">
+      <div class="cenmain">
+        <div class="leftmain">
+          <div style="height: 200px;">
+            <span style="font-size: 50px;">Programming</span><br>
+            <span style="font-size: 50px; font-weight: bold;padding-left: 40px;">Association</span><br>
+            <span style="font-size: 30px;line-height: 80px;">程序设计协会</span>
+          </div>
+          <div style="width: 80%;height: 200px;background-color: rgba(121, 202, 202, 0.236);">
+
+          </div>
+        </div>
+        <div class="rightmain">
 
         </div>
-        <div class="condition">
-          <progress id="progress" value="80" max="100"></progress><br>
-        
-          <progress id="progress" value="70" max="100"></progress>
-        </div>
       </div>
     </div>
-    <!--排名-->
-    <div class="ranklist">
-      <div class="rankmain">
-        <div class="listdetails">
-          第一名
-        </div>
-        <div class="listdetails">
-          第二名
-        </div>
-        <div class="listdetails">
-          第三名
-        </div>
-        <div class="listdetails">
-          第四名
-        </div>
-        <div class="listdetails">
-          第五名
-        </div>
-        <div class="listdetails">
-          第六名
-        </div>
-        <div class="listdetails">
-          第七名
-        </div>
-        <div class="listdetails">
-          第八名
-        </div>
-        <div class="listdetails">
-          第九名
-        </div>
-        <div class="listdetails">
-          第十名
-        </div>
-        
-      </div>
+    <div class="temp"></div>
+    <div class="detail">
+
     </div>
   </div>
 </body>

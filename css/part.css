@@ -1,0 +1,47 @@
+.sign{
+    padding-left: 15%;
+    margin-right: 20%;
+    float: left;
+}
+.sign img{
+    float: left;
+    padding-top: 5px;
+}
+.sign span{
+    color: white;
+    font-size:20px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.banner span{
+    padding-left: 23px;
+    color: #9a9a9d;
+    font-size: 25px;
+    font-weight: 600;
+}
+#aban:hover{
+    background-color: #ffffff0f;
+}
+.repo{
+    height: 50px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #25252b;
+    color: white;
+    padding-left: 20%;
+    line-height: 50px;
+}
+.leftmain{
+    height: 400px;
+    width: 40%;
+    color: white;
+    padding-top: 100px;
+    float: left;
+}
+.rightmain{
+    height: 500px;
+    width: 60%;
+    background-color: rgba(149, 245, 161, 0.207);
+    float: left;
+}
