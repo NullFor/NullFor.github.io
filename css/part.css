@@ -1,6 +1,6 @@
 .sign{
-    padding-left: 15%;
-    margin-right: 20%;
+    padding-left: 10%;
+    padding-right: 3%;
     float: left;
 }
 .sign img{
@@ -17,11 +17,44 @@
 .banner span{
     padding-left: 23px;
     color: #9a9a9d;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
 }
 #aban:hover{
     background-color: #ffffff0f;
+}
+.inputbox{
+    height: 50px;
+    float: right;
+    padding-right: 10%;
+}
+.inpu{
+    border: none;
+    height: 38px;
+    width: 150px;
+    color: white;
+    border-radius: 0;
+    background: rgba(255,255,255,.08);
+    padding: 6px 15px 6px 50px;
+    font-size: 18px;
+    float: left;
+
+}
+.inputimg{
+    width: 20px;
+    height: 20px;
+    margin-left: -195px;
+    margin-top: 15px;
+}
+.btninput{
+    height: 50px;
+    width: 100px;
+    float: right;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color:#0066B8;
+    line-height: 50px;
 }
 .repo{
     height: 50px;
@@ -42,6 +75,11 @@
 .rightmain{
     height: 500px;
     width: 60%;
-    background-color: rgba(149, 245, 161, 0.207);
     float: left;
+}
+.rightimg{
+    width: 550px;
+    height: 550px;
+    margin-top: 50px;
+    padding-left: 100px;
 }
