@@ -7,7 +7,7 @@
   <title>院程序设计协会官网</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/part.css">
-  
+  <script src="./javascript/nullfor.js"></script>
 </head>
 <body>
   <div class="warp">
@@ -53,14 +53,28 @@
             <span style="font-size: 50px; font-weight: bold;padding-left: 40px;">Association</span><br>
             <span style="font-size: 30px;line-height: 80px;">程序设计协会</span>
           </div>
-          <div style="width: 80%;height: 250px;background-color: rgba(121, 202, 202, 0.236);">
-            <span>当前协会人数:98</span><br>
-            <span></span>
+          <div style="width: 80%;height: 250px;">
+            <div style="padding-top: 70px;">
+              <span style="padding-left: 10%;color: gray;">当前协会人数: 98人</span>
+            </div>
+            <div style="padding-top: 80px;">
+              <div style="margin-bottom: -1px;">
+                <span class="detailsay" id="month_i"></span><br>
+              </div>
+              <progress id="progress1" value="0" max="12" class="loadpro"></progress><br>
+            </div>
+            <div style="margin-top: -10px;">
+              <div style="margin-bottom: -1px;">
+                <span class="detailsay" id="day_i"></span><br>
+              </div>
+              <progress id="progress2" value="0" max="30" class="loadpro"></progress><br>
+            </div>
+
           </div>
         </div>
         <div class="rightmain">
-          <div style="width: 100%; height: 500px;margin-top: 50px;background-color: #0065b83e;">
-            <img src="./img/view.jpg" alt="#" class="rightimg">
+          <div style="width: 100%; height: 500px;margin-top: 40px;">
+            <img src="./img/view.png" alt="#" class="rightimg">
           </div>
           
           <!--
@@ -75,4 +89,12 @@
     </div>
   </div>
 </body>
+<script>
+  var date=new Date();
+  document.getElementById('progress1').value=date.getMonth();
+  document.getElementById('month_i').innerHTML=date.getMonth()+"月";
+  document.getElementById('progress2').value=date.getDate();
+  document.getElementById('day_i').innerHTML=date.getDate()+"日";
+
+</script>
 </html>

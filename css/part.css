@@ -70,16 +70,38 @@
     width: 40%;
     color: white;
     padding-top: 100px;
+    padding-left: 5%;
     float: left;
 }
 .rightmain{
     height: 550px;
-    width: 60%;
+    width: 40%;
     float: left;
 }
 .rightimg{
     width: 550px;
     height: 550px;
-    margin-top: 10px;
-    padding-left: 100px;
+    margin-top: -10px;
+    padding-left: 30px;
+    border-radius: 35%;
 }
+
+.detailsay{
+    font-size: 15px;
+    float:right;
+}
+.loadpro{
+    float: right;
+}
+progress {
+    width: 40%;
+    height: 2px;
+    border: none;
+    background-color:#ffffff;
+    color: #4888b9; /*IE10下已完成进度的颜色*/
+}
+  
+progress::-moz-progress-bar { background: #4888b9; }/*表示在Firefox下已完成进度的颜色*/
+progress::-webkit-progress-bar { background: #ffffff; }/*表示在chrome下全部进度的颜色*/
+progress::-webkit-progress-value  { background: #4888b9; }/*表示在chrome下已完成进度的颜色*/
+  
