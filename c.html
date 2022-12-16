@@ -10,11 +10,17 @@
     
 </body>
 <script>
-    fetch('/data/test.txt')
-    .then(response => response.text())
-    .then(text => {
-    // 文件内容已获取
-    console.log(text);
-    });
+    var file =getFile('https://nullfor.github.io/data/test.txt');
+    function getFile(file) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // 文件信息获取成功
+      console.log(xhr.responseText);
+    }
+    };
+    xhr.open("GET", file, true);
+    xhr.send();
+}
 </script>
 </html>
