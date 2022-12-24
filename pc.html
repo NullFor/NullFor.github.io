@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="./css/part.css">
   <script src="./javascript/nullfor.js"></script>
 </head>
+
 <body>
   <div class="warp">
     <!--Banner-->
@@ -28,7 +30,7 @@
           <span>其他</span>
         </div>
       </div>
-      <div class="inputbox">
+      <div class="inputbox" style="visibility: hidden;">
         <div style="float: left;">
           <input type="text" placeholder="User Name" class="inpu" id="inputtext">
           <img src="./img/search.svg" alt="#" class="inputimg">
@@ -36,7 +38,7 @@
         <div style="float: left;" class="btninput">
           <span onclick="alert('hello')">搜索</span>
         </div>
-        
+
       </div>
     </header>
     <!--公告板-->
@@ -57,6 +59,7 @@
             <div style="padding-top: 70px;">
               <span style="padding-left: 10%;color: gray;">当前协会人数: 98人</span>
             </div>
+            <!--时间-->
             <div style="padding-top: 80px;">
               <div style="margin-bottom: -1px;">
                 <span class="detailsay" id="month_i"></span><br>
@@ -69,7 +72,6 @@
               </div>
               <progress id="progress2" value="0" max="30" class="loadpro"></progress><br>
             </div>
-
           </div>
         </div>
         <div class="rightmain">
@@ -79,18 +81,63 @@
         </div>
       </div>
     </div>
-    <div class="temp"></div>
-    <div class="detail" id="detial_m">
+    <div class="select_" id="detial_m">
+      <div style="width: 80%;height: 100%; background-color: yellow;margin: 0 auto;">
+        <div class="container">
+          <div class="item">简介</div>
+          <div class="item">比赛</div>
+          <div class="item">成绩</div>
+          <div class="item" id="login-button">排名</div>
+        </div>
+      </div>
+    </div>
+    <div class="detail">
 
+    </div>
+    <div id="login-modal" class="modal">
+      <!-- 模态框内容 -->
+      <div class="modal-content">
+        <!-- 模态框标题 -->
+        <div class="modal-header">
+          <h2>输入学号和密码</h2>
+          <!-- 关闭按钮 -->
+          <span class="close">&times;</span>
+        </div>
+        <!-- 模态框表单 -->
+        <form>
+          <label for="username">学号</label>
+          <input type="text" id="username" required>
+          <br>
+          <label for="password">密码</label>
+          <input type="password" id="password" required>
+          <br>
+          <input type="submit" value="登录">
+        </form>
+      </div>
     </div>
   </div>
 </body>
 <script>
-  var date=new Date();
-  document.getElementById('progress1').value=date.getMonth();
-  document.getElementById('month_i').innerHTML=date.getMonth()+"月";
-  document.getElementById('progress2').value=date.getDate();
-  document.getElementById('day_i').innerHTML=date.getDate()+"日";
+  var date = new Date();
+  document.getElementById('progress1').value = date.getMonth();
+  document.getElementById('month_i').innerHTML = date.getMonth() + "月";
+  document.getElementById('progress2').value = date.getDate();
+  document.getElementById('day_i').innerHTML = date.getDate() + "日";
+  // 获取登录按钮和模态框
+  const loginButton = document.getElementById('login-button');
+  const loginModal = document.getElementById('login-modal');
 
+  // 点击登录按钮时显示模态框
+  loginButton.addEventListener('click', function () {
+    loginModal.style.display = 'block';
+  });
+  // 获取关闭按钮
+  const closeButton = loginModal.querySelector('.close');
+
+  // 点击关闭按钮时关闭模态框
+  closeButton.addEventListener('click', function () {
+    loginModal.style.display = 'none';
+  });
 </script>
+
 </html>
